@@ -1,0 +1,10 @@
+# secrets — توکن را در گیت کامیت نکنید
+.env
+
+# runtime artifacts
+dataset/
+base_model/
+outputs/
+
+__pycache__/
+*.pyc

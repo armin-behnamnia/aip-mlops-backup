@@ -1,0 +1,16 @@
+# --- platform SDKs (pull data + push/pull models) --------------------------
+aipmodel==0.2.48        # model registry -> MLOpsManager
+ryn-data==0.2.4         # data layer     -> from data.sdk.download_sdk import s3_download
+python-dotenv
+
+# --- training (unsloth base) -----------------------------------------------
+# unsloth pulls torch/peft/accelerate transitively, but transformers/trl/
+# datasets are pinned here so the SFTConfig API in train.py stays stable.
+unsloth
+transformers>=4.44
+trl>=0.13
+datasets>=2.20
+huggingface-hub>=0.34.0,<1.0
+
+# GPU-only kernels used by unsloth; match your CUDA/torch build.
+triton==3.2.0

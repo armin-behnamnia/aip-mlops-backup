@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.py[cod]
+# dataset/ is intentionally included for this ready-to-run DADMAtools bundle.
+base_model/
+outputs/
+_unsloth_temporary_saved_buffers/

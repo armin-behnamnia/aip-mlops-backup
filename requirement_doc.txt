@@ -1,0 +1,9 @@
+من فایلا رو فرستادم. اصلا لطفا خودتون بذارین روی ترین. اینطوری سریعتر هم هست فکر کنم.
+فقط لیست پارامترها دیفالت داکیومنت باشه با این تفاوت:
+lr = 10e-5
+lora_rank = 32
+lora_alpha = 16
+lora_target_modules = q_proj,o_proj,k_proj,v_proj,gate_proj,up_proj,down_proj (اگر اینکار سخت است پارامترهای دیفالت را اعلام کنید)
+lora_drop_out = 5%
+extra_unfreezed_layers = دو لایه اول مدل بعلاوه لایه آخر مدل (اگر سخت است فقط دو لایه اول مدل)
+warming_steps = 0.1 epoch
